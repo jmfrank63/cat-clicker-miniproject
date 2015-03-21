@@ -3,32 +3,23 @@ Ink.requireModules( ['Ink.Dom.Selector_1', 'Ink.UI.ImageQuery_1'],
         var queryImages = document.getElementsByClassName('image-query');
         for (var i = 0; i < queryImages.length; i++) {
             var imageQueryObj = new ImageQuery(queryImages[i].getElementsByTagName('img'),{
-                src: 'images/{:label}/{:prefix}{:file}',
+                src: '/images/{:label}/{:file}',
                 queries: [
                     {
-                        label: 'tiny',
-                        prefix: '320x213',
+                        label: 'small',
                         width: 320
                     },
                     {
-                        label: 'small',
-                        prefix: '480x320',
-                        width: 480
-                    },
-                    {
                         label: 'medium',
-                        prefix: '640x427',
                         width: 640
                     },
                     {
                         label: 'large',
-                        prefix: '1024x683',
-                        width: 1024
+                        width: 1280
                     },
                     {
                         label: 'xlarge',
-                        prefix: '1600x1066',
-                        width: 1600
+                        width: 1920
                     }
                 ]
             });
