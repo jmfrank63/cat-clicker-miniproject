@@ -11,3 +11,7 @@ header h1 small:before  {
 footer {
     background: #ccc;
 }
+
+.active {
+    background: #888;
+}

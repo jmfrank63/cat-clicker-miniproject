@@ -6,20 +6,24 @@ Ink.requireModules( ['Ink.Dom.Selector_1', 'Ink.UI.ImageQuery_1'],
                 src: '/images/{:label}/{:file}',
                 queries: [
                     {
-                        label: 'small',
+                        label: 'tiny',
                         width: 320
                     },
                     {
+                        label: 'small',
+                        width: 600
+                    },
+                    {
                         label: 'medium',
-                        width: 640
+                        width: 960
                     },
                     {
                         label: 'large',
-                        width: 1280
+                        width: 1260
                     },
                     {
                         label: 'xlarge',
-                        width: 1920
+                        width: 126
                     }
                 ]
             });
