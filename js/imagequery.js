@@ -7,23 +7,23 @@ Ink.requireModules( ['Ink.Dom.Selector_1', 'Ink.UI.ImageQuery_1'],
                 queries: [
                     {
                         label: 'tiny',
-                        width: 320
+                        width: 160
                     },
                     {
                         label: 'small',
-                        width: 600
+                        width: 321
                     },
                     {
                         label: 'medium',
-                        width: 960
+                        width: 601
                     },
                     {
                         label: 'large',
-                        width: 1260
+                        width: 961
                     },
                     {
                         label: 'xlarge',
-                        width: 126
+                        width: 1261
                     }
                 ]
             });
