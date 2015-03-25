@@ -15,3 +15,7 @@ footer {
 .active {
     background: #888;
 }
+
+#admin-fields {
+    display : None;
+}

@@ -83,24 +83,57 @@
             <header class="vertical-space">
                 <h1>Cat Clicker<small>Front-End Web Developer Mini Project</small></h1>
                 <nav class="ink-navigation">
-                    <ul class="menu horizontal black">
-                        <li class="active"><a href="#" id="cat-menu-0">Cat 1</a></li>
-                        <li><a href="#" id="cat-menu-1">Cat 2</a></li>
-                        <li><a href="#" id="cat-menu-2">Cat 3</a></li>
-                        <li><a href="#" id="cat-menu-3">Cat 4</a></li>
-                        <li><a href="#" id="cat-menu-4">Cat 5</a></li>
-                        <li><a href="#" id="cat-menu-5">Cat 6</a></li>
-                        <li><a href="#" id="cat-menu-6">Cat 7</a></li>
+                    <ul id="cat-menu" class="menu horizontal black">
+                        <li id="cat-menu-0" class="active"><a href="#">Cat 1</a></li>
+                        <li id="cat-menu-1"><a href="#">Cat 2</a></li>
+                        <li id="cat-menu-2"><a href="#">Cat 3</a></li>
+                        <li id="cat-menu-3"><a href="#">Cat 4</a></li>
+                        <li id="cat-menu-4"><a href="#">Cat 5</a></li>
+                        <li id="cat-menu-5"><a href="#">Cat 6</a></li>
+                        <li id="cat-menu-6"><a href="#">Cat 7</a></li>
                     </ul>
                 </nav>
             </header>
             
             <div class="column-group gutters vertical-space">
-                <div class="all-50 small-100 tiny-100 image-query">
+                <div class="all-50 small-100 tiny-100">
                     <h2 id="cat-clicked">Cat 1 clicked: 0</h2>
                     <figure class="ink-image">
                         <img id="cat-image" src="images/cat00.jpg" alt="Picture of a cat"></img>
                     </figure>
+                </div>
+                <div class="all-50 small-100 tiny-100">
+                    <div class="column-group gutters">
+                        <div class="all-30 small-100 tiny-100">
+                            <h2 class="vertical-space"> </h2>
+                            <button id="admin-button" class="ink-button">Admin</button>
+                        </div>
+                        <div id="admin-fields" class="all-70 small-100 tiny-100">
+                            <h2 class="vertical-space"> </h2>
+                            <form id="admin-form" action="" class="ink-form">
+                                <div class="column-group gutters">
+                                    <label for="inline-name" class="all-20 align-right push-middle">Name</label>
+                                    <div class="control all-80">
+                                        <input type="text" name="name" id="inline-name">
+                                    </div>
+                                    <label for="inline-clicks" class="all-20 align-right push-middle">Clicks</label>
+                                    <div class="control all-80">
+                                        <input type="text" name="phone" id="inline-clicks">
+                                    </div>
+                                    <label for="inline-change" class="all-20 align-right"></label>
+                                    <div class="control all-80 column-group gutters">
+                                        <div class="control all-50">
+                                            <button id="change-button" class="ink-button">Save</button>
+                                        </div>
+                                         <div class="control all-50">
+                                            <button id="cancel-button" class="ink-button">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
